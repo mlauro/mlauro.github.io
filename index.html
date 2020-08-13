@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Collection of Recipes</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+</style>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+<div class="background">
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;max-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Recipes</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Why Bake?</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16"></div>
+  </div>
+</div>
+
+<div class="container-lg my-3">
+    <!-- Intro to the Collection -->
+<div class="header">
+<h1> Recipes for Designers </h1>
+</div>
+
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+
+
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/car1.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Raspberry Almond Cake</h5>
+                    <p>The perfect combination of berry and nutty. Try it <a href="https://livforcake.com/bakewell-cake/">here!</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/car2.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Black Forrest Cake</h5>
+                    <p>With a hint of homemade cherry liqueur. Start <a href="https://livforcake.com/black-forest-cake/">now!</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/car3.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>White Mocha Cake</h5>
+                    <p>Pairs well with a strong dark roast coffee. Visit <a href="https://livforcake.com/black-forest-cake/">here!</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+<hr>
+<div class="subheading">
+<h2> Be your own Cake Boss </h2>
+</div>
+<hr>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:15px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p1.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://preppykitchen.com/ultimate-chocolate-cake/">Chocolate Cake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p1-01.png" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://preppykitchen.com/ultimate-chocolate-cake/">Rainbow Cake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p3-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.shugarysweets.com/salted-caramel-chocolate-cheesecake-cake/">Salted Caramel Chocolate Cheesecake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p4-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://houseofnasheats.com/vintage-cherry-chip-layer-cake/">Cherry Chip Cake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+</div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p5-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://cleobuttera.com/cakes/love-is-all-around-cake-roll/">Heart Roll Cake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p6-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.lowcarbmaven.com/pretty-gluten-free-birthday-cake-recipe-sugar-free-low-carb/">Gluten Free Cake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p7-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.sugarhero.com/hydrangea-cakes/">Hydrangea Cakes</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/p8-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://sugarandcharm.com/how-to-create-a-marble-drip-cake">Marble Glazed Cake</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+</div>
+<div class="container-lg my-3">
+    <!-- Intro to the Collection -->
+<hr>
+<div class="space"></div>
+    <div id="myCarousel" class="carousel slide" data-interval="2500" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/car4.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gingerbread Cookies</h5>
+                    <p>A hint of spice with sweet chocolate. Try it <a href="https://livforcake.com/chocolate-dipped-ginger-cookies/">here!</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/car5.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Strawberry Cheesecake Cookie Cups</h5>
+                    <p>Fruitty, creamy, and chewy all in one. Try it <a href="https://livforcake.com/strawberry-cheesecake-cookie-cups/">now!</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/car6.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Peanut Butter Smores Cookies</h5>
+                    <p>Combination of a toasty fire and a nutty flavour. Visit <a href="https://livforcake.com/peanut-butter-smores-cookies/">here!</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+<hr>
+<div class="subheading">
+<h2> Make your own dough, boy </h2>
+</div>
+<hr>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:15px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s1-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://livforcake.com/edible-cookie-dough-recipe/">Edible Cookie Dough</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s2-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://cookiesandcups.com/rainbow-chocolate-chip-cookies/">Rainbow Chip Cookies</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s3-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.biggerbolderbaking.com/crazy-cookie-dough/">Cookie Variations</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s4-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://sallysbakingaddiction.com/red-velvet-chocolate-chip-cookies/">Red Velvet Cookies</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+</div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s5-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.cookingclassy.com/butter-cookies/">Butter Cookies</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s6-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.livewellbakeoften.com/soft-chewy-monster-cookies/">Monster Cookies</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s7-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.janespatisserie.com/2020/04/25/nyc-chocolate-chip-cookies/">NY Style Choco Chip</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+    <div class="w3-quarter">
+      <div class="container-image">  
+      <img src="images/s8-01.jpg" alt="Cake" style="width:100%">
+      <div class="overlay">
+        <div class="text"><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a50804/butter-pecan-cookies-recipe/">Butter Pecan Cookies</a></div>
+       </div>
+       </div> 
+      <!--<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>-->
+    </div>
+</div>
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+-->
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <hr>
+<div class="subheading">
+<h2> Baking and Design </h2>
+</div>
+<hr>
+    <div class="w3-padding-32">
+      <p>This is a collection of recipes which includes baking tips, cooking process, and aesthetic in each tasty treat. I was inspired by my new-found love for baking; these are some of the recipes I want to try or have tried. Moreover, these can help challenge designers to create something beyond taste and to further learn about design elements such as texture, colour, breadth, and shape. The abundance of recipes and innovative ideas are out there, and hopefully continues to get added to this webpage.</p>
+    </div>
+  </div>
+  <hr>
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<body>
+
+</div>
+</body>
+</html>     
